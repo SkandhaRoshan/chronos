@@ -149,7 +149,7 @@ export class StakingAdapter {
   }
 }
 
-export function getProtocolAdapter(protocol: string, chainId: number) {
+export function getProtocolAdapter(protocol: string) {
   switch (protocol) {
     case "aave":
       return new AaveAdapter();

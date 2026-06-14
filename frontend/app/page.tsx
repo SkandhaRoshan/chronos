@@ -21,6 +21,7 @@ import {
   Zap,
   LayoutGrid,
 } from "lucide-react";
+import { getProtocolAdapter } from "../agent/adapters";
 
 import { getVaultState } from "../agent/vault/getVaultState"
 import { settings } from "../agent/settings";
@@ -696,7 +697,7 @@ function VaultDashboard({
               </div>
 
               <button
-                onClick={execute}
+                onClick={() => getProtocolAdapter("aave")}
                 disabled={txState !== "idle"}
                 className="mt-6 flex h-14 w-full items-center justify-center gap-2 rounded-2xl font-medium text-slate-950 transition disabled:cursor-not-allowed disabled:opacity-70"
                 style={{
