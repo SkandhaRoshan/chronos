@@ -4,7 +4,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { BrowserProvider, getAddress, isAddress } from "ethers";
 import { motion } from "motion/react";
 import {
-  Activity,
   ArrowRight,
   CheckCircle2,
   ChevronLeft,
@@ -22,6 +21,9 @@ import {
   Zap,
   LayoutGrid,
 } from "lucide-react";
+
+import { getVaultState } from "../agent/vault/getVaultState"
+import { settings } from "../agent/settings";
 
 type EthereumProvider = {
   request: (args: {

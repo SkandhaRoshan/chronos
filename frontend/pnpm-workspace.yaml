@@ -1,4 +1,10 @@
 allowBuilds:
+  better-sqlite3: true
+  blake-hash: true
+  bufferutil: true
+  es5-ext: true
+  esbuild: true
+  utf-8-validate: true
   sharp: true
   unrs-resolver: true
 ignoredBuiltDependencies:
