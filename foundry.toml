@@ -1,0 +1,23 @@
+[profile.default]
+src = "agent/contracts/src"
+out = "out"
+script = "agent/contracts/script"
+libs = ["lib", "node_modules"]
+solc = "0.8.24"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+
+[profile.default.optimizer_details]
+yul = true
+yulDetails = { stackAllocation = true }
+
+[rpc_endpoints]
+robinhood_testnet = "https://alchemy.com"
+arbitrum_sepolia = "https://omniatech.io"
+
+[fmt]
+line_length = 120
+tab_width = 4
+quote_style = "double"

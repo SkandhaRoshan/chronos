@@ -1,0 +1,17 @@
+# Sensitive Credentials
+.env
+.env.local
+
+# Dependency folders
+node_modules/
+.pnpm-store/
+
+# Local data cache
+data/
+*.db
+*.db-journal
+
+# Compilation artifacts
+dist/
+out/
+.cache/
